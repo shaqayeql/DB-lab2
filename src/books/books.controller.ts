@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Post, Put , Delete } from '@nestjs/common';
 import {BooksService} from './books.service';
 import CreateBookDto from './dto/create-book.dto';
 
@@ -12,5 +12,14 @@ export default class BooksController {
   @Get()
   getAll() {
     return this.booksServices.getAllBooks();
+  }
+  @Put()
+  UpdateUser(@Body() name: string,newValue: CreateBookDto){
+    return this.booksServices.update(name,newValue);
+  }
+
+  @Delete()
+  DeleteUser(@Body() name: string){
+    return this.booksServices.delete(name);
   }
 }
