@@ -1,0 +1,28 @@
+//employer-Post-Test
+{
+    "id": 4,
+    "name": "Shaqayeq",
+    "phoneNumber": 6565
+}
+
+
+
+//project-Post-Test
+{
+    "projectID" : 1,
+    "projectName" : "p1",
+    "userID" : 4,
+    "type" : "c++",
+    "deadline" : "friday",
+    "price" : 120000
+}
+
+//project-Put-Test
+{
+    "projectID" : 1,
+    "projectName" : "p1",
+    "userID" : 4,
+    "type" : "java",
+    "deadline" : "friday",
+    "price" : 140000
+}
